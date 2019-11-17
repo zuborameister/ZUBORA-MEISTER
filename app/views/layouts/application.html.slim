@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title
+      | zubora meister
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  body
+    header
+      .l-header
+        h1
+          | zubora meister
+    main
+      = yield
+
+    footer
+      | © ZUBORA MEISTER All Rights Reserved.
